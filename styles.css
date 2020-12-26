@@ -1,3 +1,29 @@
+* {
+  box-sizing: border-box;
+}
 .subgrid-article {
   background-image: url("https://alex-lvl.github.io/NYT-article-clone/images/the-theory-of-inflation.png");
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+.top-nav ul {
+  position: fixed;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 50px auto repeat(9, 1fr);
+}
+.top-nav ul li {
+  flex: 1;
+}
+#top-nav-center {
+  grid-column: 5 / span 6;
+  justify-self: center;
+}
+header {
+  margin-top: 100px;
 }
