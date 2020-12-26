@@ -8,8 +8,10 @@
   background-size: contain;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  row-gap: 30px;
+  grid-template-rows: 1.5fr 1fr 0.87fr 1fr;
+  row-gap: 15px;
+  column-gap: 15px;
+  font-size: 13px;
 }
 .subgrid-article :nth-child(1) {
   grid-column: 1 / span 1;
@@ -97,7 +99,8 @@ article {
   font-size: 1.3rem;
   line-height: 1.5;
 }
-.writer-info {
+.writer-info,
+.comments {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1rem;
@@ -105,7 +108,8 @@ article {
   justify-items: start;
   grid-template-rows: 70px;
 }
-.writer-info ul {
+.writer-info ul,
+.comments ul {
   justify-self: end;
 }
 .grid-article {
@@ -113,4 +117,9 @@ article {
   margin: 0 auto;
   display: grid;
   grid-template-rows: 10% 90%;
+}
+.article-info {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 16px;
 }
