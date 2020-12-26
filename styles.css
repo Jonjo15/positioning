@@ -3,27 +3,114 @@
 }
 .subgrid-article {
   background-image: url("https://alex-lvl.github.io/NYT-article-clone/images/the-theory-of-inflation.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+.subgrid-article :nth-child(1) {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+.subgrid-article :nth-child(2) {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+.subgrid-article :nth-child(3) {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
+.subgrid-article :nth-child(4) {
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+.subgrid-article :nth-child(5) {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 1;
+}
+.subgrid-article :nth-child(6) {
+  grid-row: 4 / span 1;
+  grid-column: 2 / span 1;
+}
+.subgrid-article :nth-child(7) {
+  grid-row: 4 / span 1;
+  grid-column: 3 / span 1;
+}
+.subgrid-article :nth-child(8) {
+  grid-row: 4 / span 1;
+  grid-column: 4 / span 1;
 }
 li {
   list-style: none;
   display: inline-block;
 }
+.top-nav {
+  height: 35px;
+  border-bottom: 1px solid rgba(180, 180, 180, 0.411);
+  background-color: white;
+}
 .top-nav ul {
+  height: 35px;
   position: fixed;
+  background-color: white;
   top: 0;
   padding: 0;
   margin: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: 50px 50px auto repeat(9, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 50px 50px auto repeat(8, 1fr) 1fr 1fr;
+  padding: 5px 10px;
+  grid-column-gap: 10px;
 }
 .top-nav ul li {
   flex: 1;
 }
 #top-nav-center {
-  grid-column: 5 / span 6;
+  grid-column: 4 / span 7;
   justify-self: center;
 }
 header {
-  margin-top: 100px;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 965px;
+  text-align: center;
+}
+header h1 {
+  width: 600px;
+  margin: 0 auto;
+}
+header img {
+  max-width: 965px;
+  margin: 0 auto;
+}
+figure {
+  text-align: left;
+}
+article {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.writer-info {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  display: grid;
+  justify-items: start;
+  grid-template-rows: 70px;
+}
+.writer-info ul {
+  justify-self: end;
+}
+.grid-article {
+  width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 10% 90%;
 }
