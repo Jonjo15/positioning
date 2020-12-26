@@ -85,13 +85,18 @@ header {
 header h1 {
   width: 600px;
   margin: 0 auto;
+  margin-bottom: 25px;
 }
-header img {
+header img,
+figure {
   max-width: 965px;
   margin: 0 auto;
 }
 figure {
   text-align: left;
+}
+figure img {
+  width: 100%;
 }
 article {
   max-width: 600px;
@@ -122,4 +127,40 @@ article {
   font-family: sans-serif;
   font-weight: 300;
   line-height: 16px;
+}
+#bicep {
+  width: 965px;
+}
+.bottom-nav {
+  display: grid;
+  row-gap: 15px;
+  grid-template-rows: 10% 90%;
+}
+.bottom-nav h4 {
+  margin-left: 25px;
+}
+.bottom-nav-grid-cont {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.last-child-bottom-nav {
+  border-left: 1px solid rgba(119, 119, 119, 0.411);
+  padding-left: 15px;
+}
+.bottom-nav-grid-cont ul li {
+  display: list-item;
+  margin-top: 2px;
+}
+.bottom-nav-large-font {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+footer {
+  margin: 0 auto;
+  width: 1000px;
+  height: 20px;
+  font-size: 11px;
+}
+footer ul li {
+  margin-right: 7px;
 }
